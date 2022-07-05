@@ -173,6 +173,11 @@ function createCard(book) {
   deleteBtn.appendChild(buttonDel);
   deleteBtn.appendChild(buttonEdit);
   deleteBtn.querySelector('.delete').addEventListener('click', (e) => { 
+
+    const isDelete = window.confirm('want to delete this book from library?');
+      if(!isDelete){
+        return
+      }
     const list = document.querySelectorAll('ul.card__grid > li'); 
     const parent = e.target.parentElement.parentElement.parentElement;
     const index = [...list].findIndex(item => item === parent );

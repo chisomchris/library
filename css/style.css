@@ -132,6 +132,7 @@ main > h2::after {
 .card__grid .card > *:not(:first-child){
   margin-top: .5rem;
 }
+
 .delete__edit button{
   border: orangered solid 2px;
   padding: .25em 1em;
